@@ -1,4 +1,4 @@
-# Basic or Essentials
+# Basic or Essentials (OOP)
 
 ### Coupling
  One class depends of another class called coupling.
@@ -105,4 +105,28 @@ class MailService
 }
 ```
 Here, only sendMail method is public so it can be accessed from other scope but other methods are hidden (private).
+
+### Inheritance
+Inheritance is the abilities to re-use code. We can use it by extends key word where we can use common methods.
+Ex :
+```
+class UIControl
+{
+    public function enable()
+    {
+        //Code...
+    }
+}
+
+class UseClass
+{
+    public function useTextBox()
+    {
+        $textBox = new TextBox();
+        $textBox->enable();
+    }
+}
+```
+
+
   
