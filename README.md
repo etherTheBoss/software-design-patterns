@@ -45,3 +45,28 @@ class Validate
 
   ```
   Here, From and Validate are the couple class cause From class is depends on Validate class.
+  
+  ### Encapsulation
+  
+  In a class, there will be access modifiers but the access modifiers will not be public but private so only this class can access them.
+It won't be possible to change any value of those access modifiers. However, there will be getter and setter methods to get or
+set the value of those access modifiers.
+  ```
+class Account
+{
+    private $balance;
+
+    public function setBalance($balance)
+    {
+        if (is_int($balance)) {
+            return $this->balance = $balance;
+        }
+        return false;
+    }
+
+    public function getBalance()
+    {
+        return $this->balance;
+    }
+}
+```
