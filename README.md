@@ -104,7 +104,8 @@ class MailService
     }
 }
 ```
-Here, only sendMail method is public so it can be accessed from other scope but other methods are hidden (private).
+Here, only sendMail method is public so it can be accessed from other scope but other methods are hidden (private). However, we can not create any instance of an
+abstract class only we can extend it.
 
 ### Inheritance
 Inheritance is the abilities to re-use code. We can use it by extends key word where we can use common methods.
@@ -128,5 +129,31 @@ class UseClass
 }
 ```
 
+### Polymorphism
+The ability of an object to take many forms. We use interface for the class signature and we implement in many different classes with different forms.
+
+```
+interface TaxCalculator
+{
+    public function taxCalculate();
+}
+
+class Tax2020 implements TaxCalculator
+{
+
+    public function taxCalculate()
+    {
+        return 100;
+    }
+}
+
+class Tax2021 implements TaxCalculator
+{
+    public function taxCalculate()
+    {
+        return 155;
+    }
+}
+```
 
   
